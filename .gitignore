@@ -1,0 +1,22 @@
+# 虚拟环境
+.venv/
+venv/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 环境变量与密钥
+.env
+*.env
+
+# 静态文件收集目录
+staticfiles/
+
+# 编辑器
+.vscode/
+.idea/
+
+# 系统文件
+Thumbs.db
+.DS_Store
