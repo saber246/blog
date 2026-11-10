@@ -130,7 +130,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / 'static'
+# STATIC_ROOT = BASE_DIR / 'static'
 
 # 文件路径：blog_project/settings.py 末尾添加
 LOGIN_URL = 'login'        # 未登录用户访问保护页面时跳转到登录页
