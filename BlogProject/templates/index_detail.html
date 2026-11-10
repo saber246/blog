@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<article class="post-view">
+    <span class="category-tag">{{ post.category.name }}</span>
+    <div class="post-header">
+        <h1>{{ post.title }}</h1>
+        {% if user.is_authentcated %}
+        <form method="post" action=""{% url 'toggle_favorite' post.pk %}"">
+            {% csrf_token %}
+            <button type="sumbit" class="fav-btn">
+                {% if user in post.favorites.all %}
+                    &#x2665;
+                {% else %}
+                    &#x2661; ♡ 
+                {% endif %}
+            </button>
+        </form>
+        {% endif %}
+    </div>
+    <time>{{ post.created_at | date:"Y-m-d" }}</time>
+    <div class="content">{{ post.content | safe }}</div>
+    <a href="{% url 'index' %}" class='black-link'>返回首页</a>
+</article>
+{% endblock %}

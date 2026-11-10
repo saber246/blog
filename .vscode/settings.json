@@ -1,0 +1,26 @@
+{
+  "emmet.includeLanguages": {
+    "django-html": "html",
+    "jinja-html": "html"
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "[django-html]": {
+    "editor.tabCompletion": "on",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "[jinja-html]": {
+    "editor.tabCompletion": "on",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  }
+}
